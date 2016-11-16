@@ -1,0 +1,33 @@
+{
+    "name": "ajain/customerQueue",
+    "type": "library",
+    "description": "simple customer queue application",
+    "authors": [
+      {
+        "name": "Aarti Jain",
+        "email": "aartishah18@gmail.com",
+        "role": "developer"
+      }
+    ], 
+    "autoload": {
+     "psr-4": {
+       "Queue\\": "fsqueue"
+     }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.zendframework.com/"
+        }
+    ],
+    
+  "config":{
+    "secure-http":false
+  },
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-db": "2.*"
+    }
+    
+  
+}
